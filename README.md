@@ -1,15 +1,15 @@
-# POM_Implemenation
-**This project include POM implementation**
-[**Prerequisite]([url](https://the-internet.herokuapp.com/login)) of this Project Automation:**
-[**Prerequisite]([url](https://the-internet.herokuapp.com/tables)) of this Project Automation:**
-[**Prerequisite]([url](https://the-internet.herokuapp.com/javascript_alerts)) of this Project Automation:**
-[**Prerequisite]([url](https://the-internet.herokuapp.com/upload)) of this Project Automation:**
-Install Visual studio
-Install Specflow
-Install Selenium Nunit ,SpecFlow , TestHostPlatform ,SDK , 
-Install Nunit , Nunit3TestAdapter Package
-Install AutoIT(For Dialog Box handling)
-Install GIT Bash/GIT GUI
+# POM_Implemenation<br>
+**This project include POM implementation**<br>
+[**Prerequisite]([url](https://the-internet.herokuapp.com/login)) of this Project Automation:**<br>
+[**Prerequisite]([url](https://the-internet.herokuapp.com/tables)) of this Project Automation:**<br>
+[**Prerequisite]([url](https://the-internet.herokuapp.com/javascript_alerts)) of this Project Automation:**<br>
+[**Prerequisite]([url](https://the-internet.herokuapp.com/upload)) of this Project Automation:**<br>
+Install Visual studio<br>
+Install Specflow<br>
+Install Selenium Nunit ,SpecFlow , TestHostPlatform ,SDK , <br>
+Install Nunit , Nunit3TestAdapter Package<br>
+Install AutoIT(For Dialog Box handling)<br>
+Install GIT Bash/GIT GUI<br>
 
 ****GIT COMMANDS FOR PUSH YOUR SOLUTION ****
 **git add ExtentReport.html POM_Implementation.rar POM_IMPLEMENTATION_COMPLETE.mp4<br>
@@ -21,63 +21,63 @@ git checkout -b main<br>
 git push -f origin main**<br>
 
 
-**Working flow of this project ......**
+**Working flow of this project ......**<br>
 
-Implemented POM design Pattern 
-Implemented BDD framework
-Used Gerkhin language for step Definitions (testCases)
-Each Test Case has its own implementation ...
-Each test Case manage in POM for readablity and Reuseability 
+Implemented POM design Pattern <br>
+Implemented BDD framework<br>
+Used Gerkhin language for step Definitions (testCases)<br>
+Each Test Case has its own implementation ...<br>
+Each test Case manage in POM for readablity and Reuseability <br>
 
-**Feature**: 
-	login test cases of all herokuapp...
+**Feature**: <br>
+	login test cases of all herokuapp...<br>
 
-**@LoginTests**
-**Scenario: A_Login Automation**
-Given I am on "Live" environment
-And I have opened herokuapp page
-And  I am logged in to "herokuapp" with "tomsmith" account
-Then I verify that i am on Logout Page
-Then I Logout from current page
-Then I Close Current Page
+**@LoginTests**<br>
+**Scenario: A_Login Automation**<br>
+Given I am on "Live" environment<br>
+And I have opened herokuapp page<br>
+And  I am logged in to "herokuapp" with "tomsmith" account<br>
+Then I verify that i am on Logout Page<br>
+Then I Logout from current page<br>
+Then I Close Current Page<br>
 
 
-**@TableTests**
-**######################### TASK 2 IMPLEMENTATION #############################**
-Scenario: Extract and verify data from the table (Dynamic Table Handling
-Given I am on "Tables" environment
-And I have opened herokuapp page
-When I extract all company names from the table
-Then I verify if "Jason Doe" exists in the table
-Then I Close Current Page
+**@TableTests**<br>
+**######################### TASK 2 IMPLEMENTATION #############################**<br>
+Scenario: Extract and verify data from the table (Dynamic Table Handling<br>
+Given I am on "Tables" environment<br>
+And I have opened herokuapp page<br>
+When I extract all company names from the table<br>
+Then I verify if "Jason Doe" exists in the table<br>
+Then I Close Current Page<br>
 
-**@U_AlertTests
-########################## TASK 3 IMPLEMENTATION #############################**
-Scenario Outline: Handling different JavaScript alerts
-Given I am on "Alerts" environment
-And I have opened herokuapp page
-When I click on '<alertType>' alert
-    Then I handle the '<alertType>' alert with '<action>'
-    Then I should see the message '<expectedMessage>'
+**@U_AlertTests<br>
+########################## TASK 3 IMPLEMENTATION #############################**<br>
+Scenario Outline: Handling different JavaScript alerts<br>
+Given I am on "Alerts" environment<br>
+And I have opened herokuapp page<br>
+When I click on '<alertType>' alert<br>
+    Then I handle the '<alertType>' alert with '<action>'<br>
+    Then I should see the message '<expectedMessage>'<br>
     
-    Examples:
-      | alertType  | action  | expectedMessage                      |
-      | JS Alert  | accept  | You successfully clicked an alert   |
-      | JS Confirm | accept  | You clicked: Ok                    |
-      | JS Confirm | dismiss | You clicked: Cancel                |
-      | JS Prompt  | Hello   | You entered: Hello                 |
+    Examples:<br>
+      | alertType  | action  | expectedMessage                      |<br>
+      | JS Alert  | accept  | You successfully clicked an alert   |<br>
+      | JS Confirm | accept  | You clicked: Ok                    |<br>
+      | JS Confirm | dismiss | You clicked: Cancel                |<br>
+      | JS Prompt  | Hello   | You entered: Hello                 |<br>
 
-#Scenario Outline: Z_Close Page 
-#Then  I Close Current Page
-@WU_AlertTests
+#Scenario Outline: Z_Close Page <br>
+#Then  I Close Current Page<br>
+@WU_AlertTests<br>
 
-**########################## TASK 4 Upload File And File Verification #############################**
-Scenario: Upload file and verify success
+**########################## TASK 4 Upload File And File Verification #############################**<br>
+Scenario: Upload file and verify success<br>
 
-  Given I am on "Upload" environment
-  And I have opened herokuapp page
-  When I upload a file "testfile"
-  Then I should see the uploaded file name "testfile.txt"
+  Given I am on "Upload" environment<br>
+  And I have opened herokuapp page<br>
+  When I upload a file "testfile"<br>
+  Then I should see the uploaded file name "testfile.txt"<br>
 
   
 
