@@ -11,7 +11,7 @@ Install Nunit , Nunit3TestAdapter Package
 Install AutoIT(For Dialog Box handling)
 Install GIT Bash/GIT GUI
 
-**GIT COMMANDS FOR PUSH YOUR SOLUTION **
+****GIT COMMANDS FOR PUSH YOUR SOLUTION ****
 git add ExtentReport.html POM_Implementation.rar POM_IMPLEMENTATION_COMPLETE.mp4
 git remote add origin https://github.com/Manniawan/POM_IMPLEMENTATION_COMPLETE.git
 git commit -m "First Commit"
